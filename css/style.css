@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;500;700&family=Solway:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/*Mobil*/
+#gridcontainer {
+  display: grid;
+  grid-template-rows: 80px 1fr 200px;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  /*hjemmeside*/
+  /*kundeservice*/
+  /*Produkt*/
+}
+body .ikoner {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+body .mobilehidden {
+  display: none;
+}
+body a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body ul {
+  display: flex;
+}
+body ul li {
+  list-style: none;
+}
+body .kundeservice {
+  border-width: 1px;
+  border-style: none none solid none;
+}
+body header {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: space-around;
+  grid-column: 1/4;
+  grid-row: 1/1;
+  border: 1px black;
+  border-style: none none solid none;
+  padding: 1rem;
+  min-height: 70px;
+  max-height: 80px;
+}
+body header #hamburgercontainer {
+  order: 4;
+}
+body header #logo {
+  display: flex;
+  order: 2;
+  justify-content: center;
+}
+body header #logo a {
+  font-family: "Solway", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 60%;
+}
+body header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+body header nav .horisontalliste {
+  display: flex;
+  gap: 1rem;
+}
+body header nav .horisontalliste #toppkundeservice {
+  gap: 2rem;
+}
+body header nav form {
+  display: flex;
+  align-items: center;
+}
+body header nav form #search {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  max-height: 1.5rem;
+}
+body header nav form #cart {
+  order: 3;
+}
+body header nav form #account {
+  order: 1;
+}
+body main {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 2/4;
+  padding: 0 4%;
+  gap: 1%;
+}
+body main #Salgscontainer {
+  display: flex;
+  width: 100%;
+  grid-column: 1/4;
+  grid-row: 1/3;
+  padding: 0 0 1rem 0;
+}
+body main #Salgscontainer figure {
+  max-width: 50%;
+}
+body main #Salgscontainer .salgsbilde {
+  height: 100%;
+}
+body main #Salgscontainer #mobilsalgsbilde {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #Salgscontainer #salgsoverskrift {
+  font-size: 6rem;
+  text-align: center;
+}
+body main #Salgscontainer #salgsskrift {
+  display: none;
+}
+body main #Salgscontainer section {
+  background-color: hsl(203, 82%, 67%);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+body main .bildeknapp {
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  margin: 10%;
+}
+body main #Nyhetercontainer {
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 3/3;
+  gap: 1rem 0;
+}
+body main #kategorier {
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+body main #kategorier #kategoricontainermain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main #kategorier nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main #kategorier nav h2 {
+  justify-content: center;
+  display: flex;
+}
+body main #kategorier nav ul {
+  gap: 1rem;
+}
+body main #kategorier nav ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(203, 65%, 77%);
+  border-radius: 20px;
+  min-height: 2.3rem;
+  min-width: 5rem;
+  padding: 0 1rem;
+}
+body main #kjop-bruktcontainer {
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 5/6;
+  padding: 1rem 0;
+}
+body main figure {
+  width: 100%;
+}
+body main #artikkellenker {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  display: flex;
+  justify-content: center;
+}
+body main #artikkellenker article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+body main #artikkellenker article p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 10;
+  background-color: hsl(203, 65%, 77%);
+  min-height: 3rem;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+body main #artikkellenker article p a {
+  display: flex;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  min-height: 2rem;
+  min-width: 5rem;
+  justify-content: center;
+}
+body #populert {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  grid-column: 1/4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-row: 7/8;
+  gap: 3rem 0;
+}
+body #populert #klikkbar-lenke {
+  border-style: double;
+  border-width: 4px;
+}
+body #populert #klikkbar-lenke p a {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+body #populert .produkt {
+  flex-basis: 50%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+}
+body #populert p {
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+}
+body #populert .klikkbar p {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+body footer {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1/4;
+  grid-row: 10/11;
+  border-style: solid none none;
+  background-color: hsl(0, 0%, 98%);
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  margin: 10rem 0 0;
+  padding: 0 2.3rem;
+}
+body footer nav {
+  flex-direction: row;
+  display: flex;
+  gap: 1rem;
+}
+body footer nav h5 {
+  display: flex;
+  justify-content: center;
+}
+body footer nav ul {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+body .bildekilde {
+  position: relative;
+  z-index: 1;
+}
+body #tittel {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+body #tittel h2 {
+  font-size: 100%;
+}
+body #lenkeholder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  align-items: center;
+  background-color: hsl(203, 65%, 77%);
+}
+body #lenkeholder nav {
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body #lenkeholder .servicelenke {
+  display: flex;
+  background-color: hsl(0, 0%, 98%);
+  min-height: 30px;
+  max-height: 40px;
+  border-radius: 60px;
+  justify-content: center;
+  align-items: center;
+  min-width: 190px;
+  max-width: 200px;
+  flex-grow: 5;
+}
+body #fyll {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  padding: 2rem;
+}
+body #bunn {
+  display: grid;
+  grid-column: 1/4;
+  padding: 1rem;
+  background-color: hsl(203, 65%, 77%);
+}
+body #bunn #omoss {
+  display: flex;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  flex-wrap: wrap;
+}
+body #bunn figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #bunn figure img {
+  max-width: 500px;
+}
+body #brodsmulesti {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+body .produktbilde {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+body .produktbilde figure {
+  max-width: 600px;
+  min-width: 200px;
+}
+body .produktbilde .piler {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+body #produktnavn {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+}
+body #storrelser {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+}
+body #storrelser #storrelsesutvalg {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+body #storrelser #storrelsesutvalg button {
+  min-width: 50px;
+  min-height: 50px;
+}
+body #kjop {
+  grid-column: 1/4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+body #kjop a {
+  background-color: hsl(203, 82%, 67%);
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 50px;
+  padding: 1rem;
+  border-radius: 60px;
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+}
+body #innholdscontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+body #innholdscontainer #beskrivelse {
+  max-width: 500px;
+  padding: 2rem;
+  background-color: hsl(203, 65%, 77%);
+  min-width: 300px;
+}
+body #innholdscontainer #storrelsekjop {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+body aside {
+  grid-column: 1/4;
+}
+body aside h5 {
+  display: flex;
+  padding: 4%;
+  align-items: center;
+  font-size: 120%;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+
+figcaption {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 70%;
+}
+
+/*Mobil*/
+@media only screen and (max-width: 800px) {
+  #gridcontainer, #gridkunde, #gridprodukt {
+    grid-template-columns: 1fr;
+  }
+  #gridcontainer body main #artikkellenker article p, #gridkunde body main #artikkellenker article p, #gridprodukt body main #artikkellenker article p {
+    flex-direction: column;
+  }
+  #gridcontainer .mobilehidden, #gridkunde .mobilehidden, #gridprodukt .mobilehidden {
+    display: none;
+  }
+  #gridkunde, #gridprodukt {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 801px) {
+  #gridcontainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body .mobilehidden {
+    display: flex;
+  }
+  body #hamburgermeny {
+    display: none;
+  }
+  body .desktophidden {
+    display: none;
+  }
+  body header {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  body header nav {
+    justify-content: flex-start;
+  }
+  body #kategorier {
+    display: none;
+  }
+  body #artikkellenker {
+    flex-wrap: nowrap;
+  }
+  body body main #artikkellenker article p {
+    flex-direction: row;
+    flex-grow: 10;
+  }
+  body body #populert .produkt {
+    flex-basis: 33.3%;
+  }
+  body #kjop {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+/*Kilder*/
+/*https://www.w3schools.com/html/default.asp
+
+https://www.w3schools.com/tags/tag_details.asp
+
+ https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+ https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+
+ https://www.w3schools.com/jsref/event_onclick.asp
+
+ https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html
+
+ https://dev.to/ljcdev/hamburger-css-no-js-2dfa
+
+ https://necolas.github.io/normalize.css/
+
+ https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
+
+ ChatGPT til debugging*//*# sourceMappingURL=style.css.map */

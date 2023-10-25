@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="utf-8">
+        <title>Enviroshoe forside</title>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/Font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/Font/css/brands.css" rel="stylesheet">
+        <link href="css/Font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div id="gridcontainer">
+
+
+        <!--Header-->
+        <header>  
+            <nav class="headerkategorier" id="hamburgercontainer">
+                <i class="fa-solid fa-bars ikoner" id="hamburgermeny"></i>
+            </nav>
+            
+            <span id="logo">
+                <a href="index.html">Enviroshoe</a> 
+            </span>      
+
+                <nav class="headerkategorier">
+                        <ul class="horisontalliste mobilehidden">
+                            <li class="mobilehidden">
+                                <a>Herre</a>
+                            </li>
+                            <li class="mobilehidden">
+                                <a>Dame</a>
+                            </li>
+                            <li class="mobilehidden">
+                                <a>Barn</a>
+                            </li>
+
+                            <li id="toppkundeservice" class="toppkategorier mobilehidden kundeservice">
+                                <a href="kundeservice.html">Kundeservice</a>
+                            </li>
+                        </ul>
+                            <i class="fa-solid fa-user ikoner mobilehidden" id="account"></i>
+
+
+                            <form>
+                                <input id=search class="mobilehidden" type=text>
+                            </form>
+                                <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner"></i>
+
+                        <i class="fa-solid fa-bag-shopping ikoner" id="cart"></i>
+
+                </nav>
+        </header>
+
+
+        <!--Main-->
+        <main>
+                <section id="Salgscontainer">
+                    <figure>
+                        <picture class="salgsbilde">  
+                            <source srcset="img/hoestskolowres.jpg" class="salgsbilde desktophidden" media="(min-width: 600px)">
+                            <img src="img/hoestskolowres-halv.jpg" id="mobilsalgsbilde" class="salgsbilde" alt="nærbilde av en persons sko">
+                        </picture>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/fernandozhiminaicela-6246704/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4192768">fernando zhiminaicela</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4192768">Pixabay</a>
+                        </figcaption>
+                    </figure>  
+                    <section>
+                        <a id="salgsoverskrift">Salg XX%</a>
+                    </section>
+                </section>
+
+                <section id="Nyhetercontainer">
+                    <figure>
+                        <picture>
+                            <img src="img/sko-paa-tur-lowres.jpg" alt="person som går tur i naturen, fokuset er på skoene">
+                        </picture>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/imkhuzaima-24825606/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6871901">imkhuzaima</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6871901">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                            <a id="Nyheter" class="bildeknapp">Nyheter</a>
+                </section>
+
+            <section id="kategorier">
+                <nav>
+                    <div id=kategoricontainermain>
+                        <h2>Kategorier</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Herre</a>
+                            </li>
+                            <li>
+                                <a href="#">Dame</a>
+                            </li>
+                            <li>
+                                <a href="#">Barn</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </section>
+
+            <section id="kjop-bruktcontainer">
+                <figure>
+                    <picture>
+                        <img src="img/Sko1lowres.jpg" alt="Et par sko plassert på en stamme i skogen">
+                    </picture>
+                    <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/arjunmj-34101863/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7998470">Arjun MJ</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7998470">Pixabay</a>                    
+                    </figcaption>
+                </figure>
+                <a id="kjop-brukt" class="bildeknapp">Kjøp brukt</a>
+            </section>
+
+            <section id="artikkellenker">
+                <article>
+                    <p>Lorem ipsum dolor sit
+                        <a>Les mer</a>
+                    </p>
+                                        <p>Lorem ipsum dolor sit
+                        <a>Les mer</a>
+                    </p>
+                </article>
+            </section>
+
+            <section id="populert">
+                <article class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/Oransje-og-svarte-skolowres.jpg" alt="Oransje og svarte joggesko">
+                        </picture>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/mixshot-34719382/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7875371">Marcin Lampart</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7875371">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a>Oransje og svarte joggesko</a></p>
+                </article>
+
+                <article class="produkt" id="klikkbar-lenke">
+                    <figure>
+                            <a href="produkt.html"><img src="img/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull"></a>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
+                            <!--Kilde:https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image-->
+                        </figcaption>
+                    </figure>
+                    <p><a href="produkt.html" class="klikkbar">Høyhelte sko med stropper</a></p>
+                </article>
+
+                <article class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/blomsterskolowres.jpg" alt="Derbysko med blomstermønster">
+                        </picture>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5095710">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a>Blomstersko</a></p>
+                </article>
+
+                <article class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/formelle-laerskolowres.jpg" alt="Brune derbysko">
+                        </picture>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/rydv151-1917319/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">rishabh yadav</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2434210">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a>Brune derbysko</a></p>
+                </article>
+
+                <article class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/blaa-joggeskolowres.jpg" alt="Blå joggesko">
+                        </picture>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Stefan Schweihofer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371625">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a>Blå joggesko</a></p>
+                </article>
+
+                <article class="produkt">
+                    <figure>
+                        <picture>
+                            <img src="img/Nike-sneakerslowres.jpg" alt="Mønstrede fargerike sneakers">
+                        </picture>
+                        <figcaption class="bildekilde">Image by <a href="https://pixabay.com/users/mohamedbn-38670969/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Mohamed Ben mansour</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8171942">Pixabay</a>
+                        </figcaption>
+                    </figure>
+                    <p><a>Mønstrede sneakers</a></p>
+                </article>
+            </section>
+        </main>
+
+
+        <!--Footer-->
+        <footer>
+                <nav>
+                    <section id="footerkategorier" class="footer">
+                        <h5><a href=#>Kategorier</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                             <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="footerkundeservice" class="footer">
+                        <h5><a href="kundeservice.html" class="kundeservice">Kundeservice</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                             <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="footerbetaling" class="footer">
+                        <h5><a>Betaling</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                             <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="sosialemedier" class="footer">
+                        <h5><a>Sosiale medier</a></h5>
+                        <ul>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Ipsum</a>
+                            </li>
+                            <li>
+                                <a href="#">Dolor</a>
+                            </li>  
+                             <li>
+                                <a href="#">Sit</a>
+                            </li>   
+                            <li>
+                                <a href="#">Amet</a>
+                            </li>
+                        </ul>
+                    </section>
+                </nav>
+        </footer>
+        </div>
+    </body>
+</html>
+
+<!--Kilder-->
+
+<!--https://www.w3schools.com/html/default.asp
+
+https://www.w3schools.com/tags/tag_details.asp
+
+ https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+ https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+
+ https://www.w3schools.com/jsref/event_onclick.asp
+
+ https://www.w3docs.com/snippets/css/how-to-hide-elements-in-a-responsive-layout.html
+
+ https://dev.to/ljcdev/hamburger-css-no-js-2dfa
+
+ https://necolas.github.io/normalize.css/
+ 
+ https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
+
+ ChatGPT til debugging-->
