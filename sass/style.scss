@@ -17,6 +17,21 @@ body{
         border-collapse: collapse;
     }
 
+    #nokkelord{
+        display:flex;
+        gap: 1rem;
+        list-style: circle;
+    }
+    .analysebildecontainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .analysebilde{
+        max-width:50rem;
+    }
+
     background-color: rgb(250, 250, 250);
     color:black;
     font-family: Arial, Helvetica, sans-serif;

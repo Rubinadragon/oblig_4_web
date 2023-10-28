@@ -18,6 +18,23 @@ body {
   /*kundeservice*/
   /*Produkt*/
 }
+body table, body th, body td {
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+body #nokkelord {
+  display: flex;
+  gap: 1rem;
+  list-style: circle;
+}
+body .analysebildecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+body .analysebilde {
+  max-width: 50rem;
+}
 body .ikoner {
   display: flex;
   align-items: center;

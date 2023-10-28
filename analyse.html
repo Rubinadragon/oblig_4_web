@@ -9,6 +9,7 @@
     <link href="css/Font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+<!--https://itstud.hiof.no/~cecilive/oblig_4_web/-->
 <body id="analysecontainer">
     <header>
         <a href="index.html" id="logo">Til Enviroshoe</a>
@@ -25,23 +26,81 @@
                 Jeg sammenlignet vintersko sammen med ordet støvler og vinterstøvler på Google Trends, der vintersko vant over de andre når det nærmer seg vinter.
                 Neste ting jeg sammenlignet var støvler mot joggesko, der var det flest på joggesko i gjennomsnittet, men støvler var mer populært i de siste månedene, så da tenker jeg støvler blir valgt.
                 Siden butikksiden jeg har laget skal være fokusert på bærekraft, valgte jeg også å sammenligne bærekraft og bærekraftig, der vant bærekraftig.
+                Butikken skal også kunne ta imot og selge penere brukte sko, er det lurt å ha med ord som brukt og gjenbruk. Jeg kunne også tatt med resirkulering, men Google Trends viser at det blir brukt veldig likte i forhold til brukt og gjenbruk.
+
             </p>
             <h5>Valgte nøkkelord</h5>
-            <ul>
+            <ul id="nokkelord">
                 <li>
                     vintersko
                 </li>
                 <li>
-                    Støvler
+                    støvler
                 </li>
                 <li>
-                    
+                    bærekraftig
                 </li>
                 <li>
-                    
+                    brukt
+                </li>
+                <li>
+                    gjenbruk
                 </li>
             </ul>
         </article>
+
+        <section>
+            <h2>SEO-analyse med Lighthouse</h2>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/SEO-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                </picture>
+            </figure>
+            <article>
+                SEO-resultatene fra lighthouse viser at det bare er et par ting jeg trenger å få gjort. Legge til en meta description, fjerne a-tagger som ikke fører til noen side, og gjøre figcaptionteksten større for bedre lesbarhet. Resultatene er like på alle tre sidene.
+            </article>
+        </section>
+
+        <section>
+            <h2>Universal utformings-analyse med Webaim</h2>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/WebAim-accessibility-summary.jpg" alt="bilde av overblikk til webaim accessibility tool.">
+                </picture>
+            </figure>
+            <article>
+                <h3>Analyse av hjemmeside</h3>
+                <p>Webaim viser at det er noen mangler i universal utforming. Søkefeltet mangler en label-tag, noe som trengs for å fungere for skjermlesingsverktøy.
+                    Hjemmesiden mangler et h1-element, jeg kunne lagt til en h1-tagg på logoen, samtidig er ikke logoen egentlig en overskrift på samme måte som de andre tekstene.
+                    Det ser ut som hjemmesiden egentlig ikke har en eneste overskrift som passer til h1-taggen. 
+                    Webaim forteller også at jeg har hoppet over et heading-nivå, en av dem er at jeg ikke har noen h1-tagg på hjemmesiden.
+                    Det som ser ut til å være i orden er alternativ tekst for bildene, og at det er bruk av strukturelle elementer for å gi mer semantisk mening. Samtidig har jeg brukt h1 de to andre sidene.
+                    Funksjoner brukt: alternativ tekst på bildene, figure-tagg, heading h2-h5, uordnet liste, header, nav, main, footer.
+                </p>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/WebAim-accessibility-summary-produkt.jpg" alt="bilde av overblikk til webaim accessibility tool.">
+                    </picture>
+                </figure>
+                <h3>Analyse av produktside</h3>
+                <p>
+                    Til forskjell fra hovedsiden, er det ingen hopp mellom overskriftstaggene, siden produktnavnet fikk h1-taggen. Det er fortsatt en mangel på label til søkefeltet.
+                    Funksjoner som ble brukt: alternativ tekst, figure-tagg, språk.
+                    Strukturelle elementer: heading h1-h4, ordnet liste, uordnet liste, header, nav, main, footer, aside.
+                </p>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/WebAim-accessibility-summary-kundeservice.jpg" alt="bilde av overblikk til webaim accessibility tool.">
+                    </picture>
+                </figure>
+                <h3>Analyse av kundeserviceside</h3>
+                <p>
+                    Kundeservicesiden har de samme problemene som hjemmesiden. 
+                    Her er det enklere å fikse på mangelen på h1-tagg, første overskriften er en h2, denne kan byttes til h1. Så er det den feilen på headeren der det er mangel på label-tagg.
+                </p>
+            </article>
+        </section>
+
         <section>
             <h2>Resultater fra analyse</h2>
             <table>
@@ -56,22 +115,108 @@
                         ChatGPT
                     </th>
                 </tr>
+
                 <tr>
                     <td>
-    
+                        Mangler meta description
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
                     </td>
                 </tr>
+
                 <tr>
+                    <td>
+                        Noen lenker ikke crawlable
+                    </td>
+                    <td>
+                    
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    Figcaptiontekst er for liten
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    
+                    </td>
+                    <td>
+                        
+                    </td>
                     <td>
                         
                     </td>
                 </tr>
             </table>
         </section>
+
     </main>
     <footer>
         <a>Cecilie Sellevold Vegstein</a>
     </footer>
 </body>
-<!--https://itstud.hiof.no/~cecilive/oblig_4_web/-->
 </html>
