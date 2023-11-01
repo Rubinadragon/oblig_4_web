@@ -19,13 +19,14 @@
 
         </nav>
     </header>
-    <main>
+    <main id="analysemain">
         <article>
             <h2>Resultater fra Google trends</h2>
             <p>Det første nøkkelordet jeg valgte å bruke var, vintersko. Siden nå som det går mot vinteren, er det flere som ser etter sko som passer bedre til vinteren.
                 Jeg sammenlignet vintersko sammen med ordet støvler og vintersko på Google Trends, der vintersko vant over de andre når det nærmer seg vinter.
                 Engelske ord er populært å bruke, spesielt ser det ut som boots er mer populært å bruke enn støvler.
-                Neste ting jeg sammenlignet var støvler mot joggesko, der var det flest på joggesko i gjennomsnittet, men støvler var mer populært i de siste månedene, så da tenker jeg støvler blir valgt.
+            </p>
+            <p>Neste ting jeg sammenlignet var støvler mot joggesko, der var det flest på joggesko i gjennomsnittet, men støvler var mer populært i de siste månedene, så da tenker jeg støvler blir valgt.
                 Samtidig er nok joggesko bra å ha med allikevel.
                 Siden butikksiden jeg har laget skal være fokusert på bærekraft, valgte jeg også å sammenligne bærekraft og bærekraftig, der vant bærekraftig.
                 Butikken skal også kunne ta imot og selge penere brukte sko, er det lurt å ha med ord som brukt og gjenbruk. Jeg kunne også tatt med resirkulering, men Google Trends viser at det blir brukt veldig likte i forhold til brukt og gjenbruk.
@@ -66,6 +67,41 @@
             </figure>
             <article>
                 SEO-resultatene fra lighthouse viser at det bare er et par ting jeg trenger å få gjort. Legge til en meta description, fjerne a-tagger som ikke fører til noen side, og gjøre figcaptionteksten større for bedre lesbarhet. Resultatene er like på alle tre sidene.
+            </article>
+            <h3>Accessibility-analyse med Lighthouse</h3>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/Accessibility-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                </picture>
+                <figcaption>Accessibility-analyse med lighthouse av hjemmeside.</figcaption>
+            </figure>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/Accessibility-lighthouse-produkt_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                </picture>
+                <figcaption>Accessibility-analyse med lighthouse av produktside.</figcaption>
+            </figure>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/Accessibility-lighthouse-kundeservice_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                </picture>
+                <figcaption>Accessibility-analyse med lighthouse av kundeserviceside.</figcaption>
+            </figure>
+            <article>
+                Accessibility-analysen viser at det heller ikke er så mye å gjøre, der det kun er hjemmeside og kundeserviceside som har noen problemer.
+                Det eneste som trengs å gjøres er å ha h-taggene i riktig tallrekkefølge.
+            </article>
+            <h3>Best practices-analyse med lighthouse</h3>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/Best-practices-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                </picture>
+                <figcaption>Alle tre sidene viser like resultater i best practices-analyse.</figcaption>
+            </figure>
+            <article>
+                Med best practices-analysen, er jeg ikke helt sikker på hva jeg kan gjøre for å fikse feilen.
+                Problemet ligger i fontawesome-filene, og ingen av de som faktisk brukes er det noen problemer med.
+                Når browseren prøver å laste opp nettsiden, blir tre av filene besvart med en 404 not found.
             </article>
         </section>
 
@@ -117,7 +153,7 @@
                         <img class="analysebilde" src="img/chatgpt-analyse-av-forside.jpg" alt="bilde av chatgpt-analyse av forside.">
                     </picture>
                 </figure>
-                <h3>Analyse av forside</h3>
+                <h3>SEO-analyse</h3>
                 <p>
                     Chatgpt mener at title-taggen er bra nok, men jeg mener at den kanskje kunne vært mer beskrivende. 
                     Det er en mangel på meta description-tagg, som er enkelt å legge til.
@@ -131,25 +167,19 @@
                     Før bedre sikkerhet er det også lurt å legge til en https-protokoll, men det fikk den da sidene ble lagt inn på Filezilla.
                     Chatgpt anbefaler også å sette opp til Google analytics og search console for å holde øye på nettsidens hurtighet og identifisere SEO-problemer.
                     Hvis dette hadde vært en nettside som faktisk skulle tas i bruk, hadde nok dette vært en god ide. Men denne nettsiden er kun tilgjengelig på skolens server, så det er ikke sikkert det vil være noe data å følge med på.
-
                 </p>
+                <p>
+                    Et par siste ting jeg må forsikre meg om er at nettsiden er lett navigerbar og er mobilvennlig.
+                </p>
+                <h3>UU-analyse</h3>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/chatgpt-analyse-av-kundeservice.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/chatgpt-UU-analyse-av-forside.jpg" alt="bilde av chatgpt-analyse av forside.">
                     </picture>
                 </figure>
-                <h3>Analyse av kundeservice</h3>
                 <p>
-
-                </p>
-                <figure class="analysebildecontainer">
-                    <picture>
-                        <img class="analysebilde" src="img/chatgpt-analyse-av-produktside.jpg" alt="bilde av chatgpt-analyse av forside.">
-                    </picture>
-                </figure>
-                <h3>Analyse av produktside</h3>
-                <p>
-
+                    Det ser ut til at det meste med UU er i orden også. Fortsatt en mangel på interne lenker, label-attributt til input-tagg og meningsfylt tekst.
+                    Chatgpt anbefaler å teste nettsiden med skjermleser og andre tilgjengelighetsverktøy. I tillegg bør jeg forsikre meg at nettsiden kan navigeres med tastatur.
                 </p>
             </article>
         </section>
@@ -207,7 +237,19 @@
 
                 <tr>
                     <td>
-                    
+                    Heading-elementer hopper over noen tall
+                    </td>
+                    <td>
+                    Hopper over noen heading-elementer
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    Browser error i console
                     </td>
                     <td>
                         
@@ -222,19 +264,7 @@
                     
                     </td>
                     <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    
-                    </td>
-                    <td>
-                        
+                        Mangler label-attributt i input-tagg
                     </td>
                     <td>
                         
