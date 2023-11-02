@@ -370,15 +370,18 @@
                 <h3>Erstatte ikke-fungerende a-tagger</h3>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-head-produkt-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-a-tagg-before.jpg" alt="bilde av chatgpt-analyse av forside.">
                     </picture>
                     <figcaption>Kode før endring.</figcaption>
                 </figure>
                 Neste tingen var noe fra lighthouse, der den nevnte at noen linker ikke kunne crawles. 
                 Dette er steder i koden der det hadde vært faktiske linker om det hadde vært en nettside til en ekte butikk, men som står tomme her.
-                Det letteste da er å erstatte a-tagger med p, siden da blir ikke områdene sett på som lenker lenger. 
-                Mulig at jeg må gjøre noen endringer i CSS senere for å ivareta utseende.
-                
+                Det letteste da er å legge på en href="#", så det er mulig å se at lenken ikke fører noen steder.
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-a-tagg-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Kode etter endring.</figcaption>
             </article>
         </section>
 

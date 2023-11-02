@@ -98,6 +98,7 @@ body header nav .horisontalliste {
 }
 body header nav .horisontalliste #toppkundeservice {
   gap: 2rem;
+  align-items: center;
 }
 body header nav form {
   display: flex;
