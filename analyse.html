@@ -4,6 +4,7 @@
 <meta charset="utf-8">
     <title>Analyse av oblig 3</title>
     <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Analyse av Enviroshoesiden til oblig 4. Analysert med google lighthouse, webaim og chatgpt.">
     <link href="css/Font/css/fontawesome.css" rel="stylesheet">
     <link href="css/Font/css/brands.css" rel="stylesheet">
     <link href="css/Font/css/solid.css" rel="stylesheet">
@@ -59,15 +60,17 @@
         </article>
 
         <section>
+            <article>
             <h2>SEO-analyse med Lighthouse</h2>
             <figure class="analysebildecontainer">
                 <picture>
                     <img class="analysebilde" src="img/SEO-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
                 </picture>
             </figure>
-            <article>
+            
                 SEO-resultatene fra lighthouse viser at det bare er et par ting jeg trenger å få gjort. Legge til en meta description, fjerne a-tagger som ikke fører til noen side, og gjøre figcaptionteksten større for bedre lesbarhet. Resultatene er like på alle tre sidene.
             </article>
+            <article>
             <h3>Accessibility-analyse med Lighthouse</h3>
             <figure class="analysebildecontainer">
                 <picture>
@@ -87,10 +90,10 @@
                 </picture>
                 <figcaption>Accessibility-analyse med lighthouse av kundeserviceside.</figcaption>
             </figure>
-            <article>
                 Accessibility-analysen viser at det heller ikke er så mye å gjøre, der det kun er hjemmeside og kundeserviceside som har noen problemer.
                 Det eneste som trengs å gjøres er å ha h-taggene i riktig tallrekkefølge.
             </article>
+            <article>
             <h3>Best practices-analyse med lighthouse</h3>
             <figure class="analysebildecontainer">
                 <picture>
@@ -98,7 +101,6 @@
                 </picture>
                 <figcaption>Alle tre sidene viser like resultater i best practices-analyse.</figcaption>
             </figure>
-            <article>
                 Med best practices-analysen, er jeg ikke helt sikker på hva jeg kan gjøre for å fikse feilen.
                 Problemet ligger i fontawesome-filene, og ingen av de som faktisk brukes er det noen problemer med.
                 Når browseren prøver å laste opp nettsiden, blir tre av filene besvart med en 404 not found.
@@ -327,18 +329,57 @@
                         Sette opp analyseverktøy(Google analytics og Google search console)
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                    
-                    </td>
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
             </table>
+        </section>
+
+        <section>
+            <h2>Forbedrende tiltak</h2>
+            <article>
+                <h3>Meta-description</h3>
+                Det første som sikkert er lurt å gjøre, er å legge til en meta description, siden det er noe både lighthouse og chatgpt kommenterer på.
+                Slik så head ut før meta description:
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-head-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Head før meta description</figcaption>
+                </figure>
+                Når jeg skal lage en meta description, er det lurt at den inneholder noen av nøkkelordene jeg har valgt ut. 
+                Det er også en god idé å ha en unik beskrivelse på hver side, at alle holder seg omtrent mellom 60 til 160 tegn, og at den er beskrivende for siden.
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-head-index-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Index head etter meta description</figcaption>
+                </figure>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-head-kundeservice-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Kundeservice head etter meta description</figcaption>
+                </figure>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-head-produkt-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Produkt head etter meta description</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Erstatte ikke-fungerende a-tagger</h3>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-head-produkt-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Kode før endring.</figcaption>
+                </figure>
+                Neste tingen var noe fra lighthouse, der den nevnte at noen linker ikke kunne crawles. 
+                Dette er steder i koden der det hadde vært faktiske linker om det hadde vært en nettside til en ekte butikk, men som står tomme her.
+                Det letteste da er å erstatte a-tagger med p, siden da blir ikke områdene sett på som lenker lenger. 
+                Mulig at jeg må gjøre noen endringer i CSS senere for å ivareta utseende.
+                
+            </article>
         </section>
 
     </main>
