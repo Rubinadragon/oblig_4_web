@@ -21,6 +21,7 @@
         </nav>
     </header>
     <main id="analysemain">
+
         <article>
             <h2>Resultater fra Google trends</h2>
             <p>Det første nøkkelordet jeg valgte å bruke var, vintersko. Siden nå som det går mot vinteren, er det flere som ser etter sko som passer bedre til vinteren.
@@ -104,6 +105,7 @@
                 Med best practices-analysen, er jeg ikke helt sikker på hva jeg kan gjøre for å fikse feilen.
                 Problemet ligger i fontawesome-filene, og ingen av de som faktisk brukes er det noen problemer med.
                 Når browseren prøver å laste opp nettsiden, blir tre av filene besvart med en 404 not found.
+                Resultatet er at ikonene ikke vises på nettsiden når den er på serveren.
             </article>
         </section>
 
@@ -119,7 +121,7 @@
                 <p>Webaim viser at det er noen mangler i universal utforming. Søkefeltet mangler en label-tag, noe som trengs for å fungere for skjermlesingsverktøy.
                     Hjemmesiden mangler et h1-element, jeg kunne lagt til en h1-tagg på logoen, samtidig er ikke logoen egentlig en overskrift på samme måte som de andre tekstene.
                     Det ser ut som hjemmesiden egentlig ikke har en eneste overskrift som passer til h1-taggen. 
-                    Webaim forteller også at jeg har hoppet over et heading-nivå, en av dem er at jeg ikke har noen h1-tagg på hjemmesiden.
+                    Webaim forteller også at jeg har hoppet over et heading-nivå.
                     Det som ser ut til å være i orden er alternativ tekst for bildene, og at det er bruk av strukturelle elementer for å gi mer semantisk mening. Samtidig har jeg brukt h1 de to andre sidene.
                     Funksjoner brukt: alternativ tekst på bildene, figure-tagg, heading h2-h5, uordnet liste, header, nav, main, footer.
                 </p>
@@ -336,16 +338,20 @@
             <h2>Forbedrende tiltak</h2>
             <article>
                 <h3>Meta-description</h3>
+                <p>
                 Det første som sikkert er lurt å gjøre, er å legge til en meta description, siden det er noe både lighthouse og chatgpt kommenterer på.
                 Slik så head ut før meta description:
+                </p>
                 <figure class="analysebildecontainer">
                     <picture>
                         <img class="analysebilde" src="img/oblig-4-head-before.jpg" alt="bilde av chatgpt-analyse av forside.">
                     </picture>
                     <figcaption>Head før meta description</figcaption>
                 </figure>
+                <p>
                 Når jeg skal lage en meta description, er det lurt at den inneholder noen av nøkkelordene jeg har valgt ut. 
                 Det er også en god idé å ha en unik beskrivelse på hver side, at alle holder seg omtrent mellom 60 til 160 tegn, og at den er beskrivende for siden.
+                </p>
                 <figure class="analysebildecontainer">
                     <picture>
                         <img class="analysebilde" src="img/oblig-4-head-index-after.jpg" alt="bilde av chatgpt-analyse av forside.">
@@ -374,14 +380,95 @@
                     </picture>
                     <figcaption>Kode før endring.</figcaption>
                 </figure>
+                <p>
                 Neste tingen var noe fra lighthouse, der den nevnte at noen linker ikke kunne crawles. 
                 Dette er steder i koden der det hadde vært faktiske linker om det hadde vært en nettside til en ekte butikk, men som står tomme her.
                 Det letteste da er å legge på en href="#", så det er mulig å se at lenken ikke fører noen steder.
+                </p>
                 <figure class="analysebildecontainer">
                     <picture>
                         <img class="analysebilde" src="img/oblig-4-a-tagg-after.jpg" alt="bilde av chatgpt-analyse av forside.">
                     </picture>
                     <figcaption>Kode etter endring.</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Endre størrelse på tekst</h3>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-tekststr-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Figcaption før endring.</figcaption>
+                </figure>
+                <p>
+                    Neste tingen å gjøre er å forstørre teksten til figcaption. 
+                    Jeg hadde opprinnelig så liten tekst under bildene for at det ikke skulle forstyrre for utseende til nettsiden. 
+                    Men det er nok bedre at teksten er lesbar, så da blir det å justere på dette. 
+                    Figcaption-teksten kommer fortsatt til å være mindre enn resten.
+                    I CSS var tekststørrelsen til figcaption satt til 70%, det å øke det til 80% løste problemet lighthouse hadde.
+                </p>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-tekststr-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Figcaption etter endring.</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Endre på h-taggene</h3>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-h-tagg-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Før endring, footeren hadde flere h5-tagger.</figcaption>
+                </figure>
+                <p>
+                    Det å endre på h-taggene hadde en løsning som jeg oppdaget en del senere i prosessen.
+                    Det jeg gjorde var å fjerne h5-taggene fra footeren, for jeg tenkte at footer egentlig ikke har noen overskrifter allikevel.
+                    Ved å fjerne h-taggene fra footeren, ser det ut som problemet lighthouse hadde med nettsiden ble fikset.
+                </p>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-h-tagg-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Etter endring, h5-taggene ble fjernet. I tillegg ble det lagt til en klasse for å ivareta CSS-egenskapene.</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Legge til label-attributt</h3>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-input-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Søkefeltet før endring.</figcaption>
+                </figure>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-input-browser-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Søkefeltet før endring i browseren.</figcaption>
+                </figure>
+                <p>
+                    Så var det label-attributten som Webaim ønsket jeg skulle legge til.
+                     Å ha en label sammen med input-taggen skal hjelpe skjermlesere å forstå nettsidens oppsett bedre.
+                    Designmessig ser det mer ryddig ut uten label, men det ødelegger for tilgjengeligheten for nettsiden, så da er det bedre å legge til en.
+                    Det mest åpenbare er å bare legge til "søk" inni label-taggen, siden det er det søkefeltet skal gjøre; søke gjennom katalogen til nettsiden.
+                </p>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-input-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Søkefeltet etter endring.</figcaption>
+                </figure>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/oblig-4-input-browser-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Søkefeltet etter endring i browseren.</figcaption>
+                </figure>
             </article>
         </section>
 

@@ -22,6 +22,9 @@ body table, body th, body td {
   border: 1px black solid;
   border-collapse: collapse;
 }
+body .klikkbar {
+  text-decoration: underline;
+}
 body #nokkelord {
   display: flex;
   gap: 1rem;
@@ -56,7 +59,6 @@ body ul li {
 }
 body .kundeservice {
   border-width: 1px;
-  border-style: none none solid none;
 }
 body header {
   background-color: rgb(250, 250, 250);
@@ -276,10 +278,6 @@ body #populert p {
   display: flex;
   font-weight: 600;
 }
-body #populert .klikkbar p {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-}
 body footer {
   display: flex;
   flex-wrap: wrap;
@@ -297,9 +295,10 @@ body footer nav {
   display: flex;
   gap: 1rem;
 }
-body footer nav h5 {
+body footer nav .footeroverskrift {
   display: flex;
   justify-content: center;
+  font-weight: 600;
 }
 body footer nav ul {
   flex-wrap: wrap;
@@ -466,7 +465,7 @@ img {
 figcaption {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 /*Mobil*/

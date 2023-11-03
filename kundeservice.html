@@ -27,24 +27,29 @@
                 <nav class="headerkategorier">
                         <ul class="horisontalliste mobilehidden">
                             <li class="mobilehidden">
-                                <a>Herre</a>
+                                <a href="#">Herre</a>
                             </li>
                             <li class="mobilehidden">
-                                <a>Dame</a>
+                                <a href="#">Dame</a>
                             </li>
                             <li class="mobilehidden">
-                                <a>Barn</a>
+                                <a href="#">Barn</a>
                             </li>
 
-                            <li id="toppkundeservice" class="toppkategorier mobilehidden kundeservice">
+                            <li id="toppkundeservice" class="toppkategorier mobilehidden kundeservice klikkbar">
                                 <a href="kundeservice.html">Kundeservice</a>
+                            </li>
+
+                            <li>
+                                <a href="analyse.html" id="analyse" class="toppkategorier">analyse.html</a>
                             </li>
                         </ul>
                             <i class="fa-solid fa-user ikoner mobilehidden" id="account"></i>
 
 
                             <form>
-                                <input id=search class="mobilehidden" type=text>
+                                <label for="search">Søk:</label>
+                                <input type=text id=search class="mobilehidden">
                             </form>
                                 <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner"></i>
 
@@ -109,7 +114,9 @@
             <footer>
                 <nav>
                     <section id="footerkategorier" class="footer">
-                        <h5><a href=#>Kategorier</a></h5>
+                        <a href=# class="footeroverskrift">
+                            Kategorier
+                        </a>
                         <ul>
                             <li>
                                 <a href="#">Lorem</a>
@@ -130,7 +137,9 @@
                     </section>
 
                     <section id="footerkundeservice" class="footer">
-                        <h5><a href="kundeservice.html" class="kundeservice">Kundeservice</a></h5>
+                        <a href="kundeservice.html" class="kundeservice footeroverskrift klikkbar">
+                            Kundeservice
+                        </a>
                         <ul>
                             <li>
                                 <a href="#">Lorem</a>
@@ -151,7 +160,7 @@
                     </section>
 
                     <section id="footerbetaling" class="footer">
-                        <h5><a>Betaling</a></h5>
+                        <a href="#" class="footeroverskrift">Betaling</a>
                         <ul>
                             <li>
                                 <a href="#">Lorem</a>
@@ -172,7 +181,9 @@
                     </section>
 
                     <section id="sosialemedier" class="footer">
-                        <h5><a>Sosiale medier</a></h5>
+                        <a href="#" class="footeroverskrift">
+                            Sosiale medier
+                        </a>
                         <ul>
                             <li>
                                 <a href="#">Lorem</a>
