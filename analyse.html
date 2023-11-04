@@ -514,7 +514,56 @@
                     </picture>
                     <figcaption>Resultatet fra lighthouse etter endringer</figcaption>
                 </figure>
-                <p></p>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/webaim-after-index.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Resultatet fra webaim etter endringer på index.</figcaption>
+                </figure>
+                <figure class="analysebildecontainer">
+                    <picture>
+                        <img class="analysebilde" src="img/webaim-after-kundeservice.jpg" alt="bilde av chatgpt-analyse av forside.">
+                    </picture>
+                    <figcaption>Resultatet fra webaim etter endringer på kundeservicesiden, likt resultat på produktside.</figcaption>
+                </figure>
+                <p>
+                    Etter å ha gjort noen av forbedringene, analyserte jeg sidene en gang til med Lighthouse og Webaim.
+                    Man kan allerede se på Lighthouse-analysen at det har forbedret seg.
+                    Det eneste som er igjen er "Browser errors were logged to the console", som gjør at ikonene ikke dukker opp når filen åpnes i serveren.
+                    Den fungerer som normalt når filen åpnes lokalt.
+                </p>
+                <p>
+                    Webaim har fremdeles et par problemer med nettsiden. 
+                    Index mangler h-tagger helt, siden det egentlig ikke er noen steder på index der det passer med h-tagger.
+                    En annen ting er at den vil jeg skal fjerne understrek fra skriften som har det, men jeg tenker å la det være, siden de skal indikere at det er fungerende lenker.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Tilgjengelighet</h2>
+            <article>
+                <h3>Skjermleser</h3>
+                <p>
+                    Det første å gjøre er å teste hvordan nettsiden fungerer med skjermleser. Første skjermleser jeg prøvde var Google sin egen screem reader for Chrome.
+                    Første utfordringen der er at skjermleseren ikke er tilgjengelig på norsk, så det ender med at man tar i bruk en av de engelske stemmene som prøver å lese opp norske ord.
+                    Noe jeg oppdaget da, som egentlig ikke var skjermleserrelatert, var at aside i produktsiden fløt over på hovedinnholdet. Jeg fikset det ved å legge til 4% padding på undersiden til main.
+                    Selv om jeg ikke har noen erfaring med hvordan man bruk
+                </p>
+            </article>
+
+            <article>
+                <h3>Tastaturnavigasjon</h3>
+                <p>
+
+                </p>
+            </article>
+
+            <article>
+                <h3>ARIA-attributter</h3>
+                <p>
+
+                </p>
             </article>
         </section>
 
