@@ -18,8 +18,13 @@
 
         <!--Header-->
         <header>  
+
+            <a href="#main">Hopp til hovedinnhold</a>
+
             <nav class="headerkategorier" id="hamburgercontainer">
-                <i class="fa-solid fa-bars ikoner" id="hamburgermeny"></i>
+                <a href=#>
+                    <i class="fa-solid fa-bars ikoner" id="hamburgermeny"></i>
+                </a>
             </nav>
             
             <span id="logo">
@@ -46,23 +51,28 @@
                                 <a href="analyse.html" id="analyse" class="toppkategorier">analyse.html</a>
                             </li>
                         </ul>
+                        <a href="#">
                             <i class="fa-solid fa-user ikoner mobilehidden" id="account"></i>
+                        </a>
 
 
-                            <form>
-                                <label for="search">Søk:</label>
-                                <input type=text id="search" class="mobilehidden">
+                            <form role="search">
+                                <label for="search" class="mobilehidden">Søk:</label>
+                                <input type=search aria-label="search text" id="search" class="mobilehidden">
                             </form>
-                                <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner"></i>
+                            <a href="#">
+                            <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner"></i>
+                            </a>
 
+                        <a href="#">
                         <i class="fa-solid fa-bag-shopping ikoner" id="cart"></i>
-
+                        </a>
                 </nav>
         </header>
 
 
         <!--Main-->
-        <main>
+        <main id="main">
                 <section id="Salgscontainer">
                     <figure>
                         <picture class="salgsbilde">  
