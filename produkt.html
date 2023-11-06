@@ -7,9 +7,9 @@
         <meta name="description" content="Med disse pent brukte høyhelte skoene, 
         så kan du gå på fest med god samvittighet.">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-        <link href="css/Font/css/fontawesome.css" rel="stylesheet">
-        <link href="css/Font/css/brands.css" rel="stylesheet">
-        <link href="css/Font/css/solid.css" rel="stylesheet">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
@@ -21,8 +21,8 @@
                 <a href="#main">Hopp til hovedinnhold</a>
     
                 <nav class="headerkategorier" id="hamburgercontainer">
-                    <a href=#>
-                        <i class="fa-solid fa-bars ikoner" id="hamburgermeny" role="button"></i>
+                    <a href=# role="button" aria-label="hamburgermeny">
+                        <i class="fa-solid fa-bars ikoner" id="hamburgermeny"></i>
                     </a>
                 </nav>
                 
@@ -50,8 +50,8 @@
                                     <a href="analyse.html" id="analyse" class="toppkategorier">analyse.html</a>
                                 </li>
                             </ul>
-                            <a href="#">
-                                <i class="fa-solid fa-user ikoner mobilehidden" id="account" role="button"></i>
+                            <a href="#" role="button" aria-label="konto">
+                                <i class="fa-solid fa-user ikoner mobilehidden" id="account"></i>
                             </a>
     
     
@@ -59,16 +59,15 @@
                                     <label for="search" class="mobilehidden">Søk:</label>
                                     <input type=search aria-label="search text" id="search" class="mobilehidden">
                                 </form>
-                                <a href="#">
-                                <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner" role="button"></i>
+                                <a href="#" role="button" aria-label="søk">
+                                <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner"></i>
                                 </a>
     
-                            <a href="#">
-                            <i class="fa-solid fa-bag-shopping ikoner" id="cart" role="button"></i>
+                            <a href="#" role="button" aria-label="handlekurv">
+                            <i class="fa-solid fa-bag-shopping ikoner" id="cart"></i>
                             </a>
                     </nav>
             </header>
-    
         <!--Main-->
         <main id="main">
             <section id="brodsmulesti">
@@ -80,24 +79,45 @@
                     </p>
                 </nav>
             </section>
+            <div id="richresultscontainer"
+                itemscope itemtype="https://schema.org/Product">
 
-            <section class="produktbilde">
-                <i class="fa-solid fa-circle-chevron-left piler"></i>
-                <figure>
-                    <picture>
-                        <img src="img/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull">
-                    </picture>
-                    <figcaption class="bildekilde">
-                        Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
-                    </figcaption>
-                </figure>
-                <i class="fa-solid fa-circle-chevron-right piler"></i>
-            </section>
+                <section class="produktbilde">
+                    <a href="#" role="button" aria-label="forrige bilde">
+                    <i class="fa-solid fa-circle-chevron-left piler"></i>
+                    </a>
+                    <figure>
+                        <picture>
+                            <img src="img/hoeyhelt-gulllowres.jpg" alt="Høyhelte sko med stropper i gull" itemprop="image">
+                        </picture>
+                        <figcaption class="bildekilde">
+                            Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5059017">Pixabay</a> 
+                        </figcaption>
+                    </figure>
+                    <a href="#" role="button" aria-label="neste bilde">
+                    <i class="fa-solid fa-circle-chevron-right piler"></i>
+                    </a>
+                </section>
 
                 <section id="produktnavn">
-                    <h1>Høyhelte sko med stropper</h1>
-                    <h2 id="pris">XXX kr</h2>
+                    <h1 itemprop="name">Høyhelte sko med stropper</h1>
+
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <h2><span id="pris" itemprop="priceCurrency" content="NOK">kr</span>
+                        <span itemprop="price" content="100">100</span></h2>
+                    </div>
                 </section>
+
+                <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    Anmeldelse <span itemprop="ratingValue">4.3</span>/5
+                    <p>
+                    Basert på<span itemprop="reviewCount">13</span> anmeldelser.
+                    </p>
+                </div>
+
+                <link itemprop="availability" href="https://schema.org/InStock">På lager
+
+            
 
                 <div id="innholdscontainer">
                     <section id="storrelsekjop">
@@ -131,11 +151,14 @@
                         </section>
                     </section>
    
-                <article id="beskrivelse">
-                    <h4>Beskrivelse</h4>
-                    Disse vakre skoene er laget av resirkulerte materialer sammen med en ny type miljøvennlig farge for å gi skoene en nydelig gullfarge.
-                    Med slike pensko kan du gå på fest med god samvittighet for miljøet.
-                </article>
+                    <article id="beskrivelse" itemprop="description">
+                        <h4>Beskrivelse</h4>
+                        Disse vakre skoene er laget av resirkulerte materialer sammen med en ny type miljøvennlig farge for å gi skoene en nydelig gullfarge.
+                        Med slike pensko kan du gå på fest med god samvittighet for miljøet.
+                    </article>
+
+                </div>
+
             </div>
 
         </main>
@@ -216,7 +239,7 @@
                     </ul>
                 </section>
 
-                <section id="footerkundeservice mobilehidden" class="footer">
+                <section id="footerkundeservice" class="footer mobilehidden">
                     <a href="kundeservice.html" class="kundeservice footeroverskrift klikkbar mobilehidden">
                         Kundeservice
                     </a>
