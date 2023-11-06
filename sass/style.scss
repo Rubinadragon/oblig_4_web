@@ -564,6 +564,11 @@ figcaption{
         display:grid;
         grid-template-columns: 1fr;
     }
+
+    footer{
+        display:flex;
+        flex-wrap:wrap;
+    }
 }
 
 

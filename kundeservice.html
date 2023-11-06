@@ -21,7 +21,7 @@
 
             <nav class="headerkategorier" id="hamburgercontainer">
                 <a href=#>
-                    <i class="fa-solid fa-bars ikoner" id="hamburgermeny"></i>
+                    <i class="fa-solid fa-bars ikoner" id="hamburgermeny" role="button"></i>
                 </a>
             </nav>
             
@@ -50,7 +50,7 @@
                             </li>
                         </ul>
                         <a href="#">
-                            <i class="fa-solid fa-user ikoner mobilehidden" id="account"></i>
+                            <i class="fa-solid fa-user ikoner mobilehidden" id="account" role="button"></i>
                         </a>
 
 
@@ -59,14 +59,15 @@
                                 <input type=search aria-label="search text" id="search" class="mobilehidden">
                             </form>
                             <a href="#">
-                            <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner"></i>
+                            <i id="searchbutton" class="fa-solid fa-magnifying-glass ikoner" role="button"></i>
                             </a>
 
                         <a href="#">
-                        <i class="fa-solid fa-bag-shopping ikoner" id="cart"></i>
+                        <i class="fa-solid fa-bag-shopping ikoner" id="cart" role="button"></i>
                         </a>
                 </nav>
         </header>
+
         
             <!--Main-->
             <main id="main">
@@ -146,11 +147,11 @@
                         </ul>
                     </section>
 
-                    <section id="footerkundeservice" class="footer">
-                        <a href="kundeservice.html" class="kundeservice footeroverskrift klikkbar">
+                    <section id="footerkundeservice mobilehidden" class="footer">
+                        <a href="kundeservice.html" class="kundeservice footeroverskrift klikkbar mobilehidden">
                             Kundeservice
                         </a>
-                        <ul>
+                        <ul class="mobilehidden">
                             <li>
                                 <a href="#">Fraktkostnader</a>
                             </li>
@@ -170,8 +171,8 @@
                     </section>
 
                     <section id="footerbetaling" class="footer">
-                        <a href="#" class="footeroverskrift">Betaling</a>
-                        <ul>
+                        <a href="#" class="footeroverskrift mobilehidden">Betaling</a>
+                        <ul class="mobilehidden">
                             <li>
                                 <a href="#">Vipps</a>
                             </li>
