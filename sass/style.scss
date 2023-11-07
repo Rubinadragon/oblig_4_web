@@ -527,6 +527,7 @@ body{
 
 figure{
     margin:0;
+    flex-direction:column;
 }
     img{
     width:100%;
@@ -538,6 +539,25 @@ figcaption{
     font-size:80%;
 }
 
+#analysecontainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+    article{
+        display:flex;
+        flex-wrap:wrap;
+        gap: 1.5rem;
+        max-width: 50rem;
+    }
+    figure{
+        display:flex;
+        gap: 0;
+        figcaption{
+            font-size: 1rem;
+        }
+    }
+}
 
 /*Mobil*/
 @media only screen and (max-width:800px){
@@ -571,6 +591,21 @@ figcaption{
     }
 }
 
+#analysecontainer{
+    display:flex;
+    flex-wrap:wrap;
+
+    figure{
+        flex-direction: column;
+    }
+}
+
+#analysecontainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
 
 /*Desktop*/
 @media only screen and (min-width: 801px) {
@@ -580,7 +615,10 @@ figcaption{
 
     body{
         .mobilehidden{
-            display: flex;
+            display: inline;
+            ul{
+                display:flex;
+            }
         }
 
         #hamburgermeny{

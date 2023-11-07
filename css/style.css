@@ -457,6 +457,7 @@ body aside h5 {
 
 figure {
   margin: 0;
+  flex-direction: column;
 }
 
 img {
@@ -468,6 +469,25 @@ figcaption {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-size: 80%;
+}
+
+#analysecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#analysecontainer article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 50rem;
+}
+#analysecontainer figure {
+  display: flex;
+  gap: 0;
+}
+#analysecontainer figure figcaption {
+  font-size: 1rem;
 }
 
 /*Mobil*/
@@ -490,12 +510,28 @@ figcaption {
     flex-wrap: wrap;
   }
 }
+#analysecontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+#analysecontainer figure {
+  flex-direction: column;
+}
+
+#analysecontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*Desktop*/
 @media only screen and (min-width: 801px) {
   #gridcontainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
   body .mobilehidden {
+    display: inline;
+  }
+  body .mobilehidden ul {
     display: flex;
   }
   body #hamburgermeny {
