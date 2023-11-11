@@ -31,9 +31,15 @@ body #nokkelord {
   list-style: circle;
 }
 body .analysebildecontainer {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem;
+}
+body .analysebildecontainer figcaption {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 body .analysebilde {
   max-width: 50rem;
@@ -125,6 +131,14 @@ body main {
   grid-row: 2/4;
   padding: 0 4% 4%;
   gap: 1%;
+  justify-content: center;
+}
+body main .snarveier {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-decoration: underline;
 }
 body main #Salgscontainer {
   display: flex;
@@ -317,7 +331,7 @@ body #tittel {
 body #tittel h2 {
   font-size: 100%;
 }
-body #lenkeholder {
+body #lenkeholder, body .lenkeholder {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -325,15 +339,25 @@ body #lenkeholder {
   grid-row: 2/3;
   align-items: center;
   background-color: hsl(203, 65%, 77%);
+  padding: 1rem;
 }
-body #lenkeholder nav {
+body #lenkeholder article, body .lenkeholder article {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+body #lenkeholder nav, body .lenkeholder nav {
   padding: 1rem;
   gap: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-body #lenkeholder .servicelenke {
+body #lenkeholder figure, body .lenkeholder figure {
+  display: flex;
+  justify-content: center;
+}
+body #lenkeholder .servicelenke, body .lenkeholder .servicelenke {
   display: flex;
   background-color: hsl(0, 0%, 98%);
   min-height: 30px;
@@ -355,12 +379,14 @@ body #bunn {
   grid-column: 1/4;
   padding: 1rem;
   background-color: hsl(203, 65%, 77%);
+  justify-content: center;
 }
 body #bunn #omoss {
   display: flex;
   grid-row-start: 4;
   grid-row-end: 5;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 body #bunn figure {
   display: flex;
@@ -471,23 +497,22 @@ figcaption {
   font-size: 80%;
 }
 
-#analysecontainer {
+#chatgpt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.5rem;
+}
+
+#table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#analysecontainer article {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  max-width: 50rem;
+#table tr {
+  background-color: hsl(0, 0%, 98%);
 }
-#analysecontainer figure {
-  display: flex;
-  gap: 0;
-}
-#analysecontainer figure figcaption {
-  font-size: 1rem;
+#table h2 {
+  padding: 30% 0 0;
 }
 
 /*Mobil*/

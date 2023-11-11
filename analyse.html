@@ -5,6 +5,13 @@
     <title>Analyse av oblig 3</title>
     <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
     <meta name="description" content="Analyse av Enviroshoesiden til oblig 4. Analysert med google lighthouse, webaim og chatgpt.">
+
+    <!--Facebook metadata-->
+    <meta property="og:title" content="Analyse av oblig 4, Enviroshoe">
+    <meta property="og:description" content="Analyse av oblig 4, SEO, tilgjengelighet og microdata">
+    <meta property="og:url" content="https://itstud.hiof.no/~cecilive/oblig_4_web/analyse.html">
+    <meta property="og:image" content="https://itstud.hiof.no/~cecilive/oblig_4_web/img/hoestskolowres.jpg">
+
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
@@ -16,53 +23,76 @@
         <a href="index.html" id="logo">Til Enviroshoe</a>
 
         <h1>Analyse av oblig 3, SEO, tilgjengelighet og microdata</h1>
-        <nav>
-
-        </nav>
     </header>
-    <main id="analysecontainer">
-
-        <article>
-            <h2>Resultater fra Google trends</h2>
-            <p>Det første nøkkelordet jeg valgte å bruke var, vintersko. Siden nå som det går mot vinteren, er det flere som ser etter sko som passer bedre til vinteren.
-                Jeg sammenlignet vintersko sammen med ordet støvler og vintersko på Google Trends, der vintersko vant over de andre når det nærmer seg vinter.
-                Engelske ord er populært å bruke, spesielt ser det ut som boots er mer populært å bruke enn støvler.
-            </p>
-            <p>Neste ting jeg sammenlignet var støvler mot joggesko, der var det flest på joggesko i gjennomsnittet, men støvler var mer populært i de siste månedene, så da tenker jeg støvler blir valgt.
-                Samtidig er nok joggesko bra å ha med allikevel.
-                Siden butikksiden jeg har laget skal være fokusert på bærekraft, valgte jeg også å sammenligne bærekraft og bærekraftig, der vant bærekraftig.
-                Butikken skal også kunne ta imot og selge penere brukte sko, er det lurt å ha med ord som brukt og gjenbruk. Jeg kunne også tatt med resirkulering, men Google Trends viser at det blir brukt veldig likte i forhold til brukt og gjenbruk.
-                I tillegg er ordet sko et veldig vanlig ord å bruke når man snakker om fottøy, så det er sikkert et bra nøkkelord også, hvis den ikke er for generell.
-            </p>
-            <h5>Valgte nøkkelord</h5>
-            <ul id="nokkelord">
-                <li>
-                    vintersko
-                </li>
-                <li>
-                    boots
-                </li>
-                <li>
-                    bærekraftig
-                </li>
-                <li>
-                    brukt
-                </li>
-                <li>
-                    gjenbruk
-                </li>
-                <li>
-                    sko
-                </li>
-                <li>
-                    joggesko
-                </li>
-            </ul>
-        </article>
-
-        <section>
+    <main id="gridcontainer">
+        <h2>Snarveier</h2>
+        <ul class="snarveier">
+            <li>
+                <a href="#tittel">Resultater fra Google trends</a>
+            </li>
+            <li>
+                <a href="#seolighthouse">SEO-analyse med Lighthouse</a>
+            </li>
+            <li>
+                <a href="#webaim">Universal utforming med WebAIM</a>
+            </li>
+            <li>
+                <a href="#chatgpt">Analyse med ChatGPT</a>
+            </li>
+            <li>
+                <a href="#table">Resultater fra analyse</a>
+            </li>
+            <li>
+                <a href="#forbedring">Forberdende tiltak</a>
+            </li>
+            <li>
+                <a href="#afteranalyse">Analyse etter forbedringer</a>
+            </li>
+            <li>
+                <a href="#tilgjengelighet">Tilgjengelighet</a>
+            </li>
+        </ul>
+        <div id="lenkeholder">
+        <h2 id="tittel">Resultater fra Google trends</h2>
             <article>
-            <h2>SEO-analyse med Lighthouse</h2>
+                <p>Det første nøkkelordet jeg valgte å bruke var, vintersko. Siden nå som det går mot vinteren, er det flere som ser etter sko som passer bedre til vinteren.
+                    Jeg sammenlignet vintersko sammen med ordet støvler og vintersko på Google Trends, der vintersko vant over de andre når det nærmer seg vinter.
+                    Engelske ord er populært å bruke, spesielt ser det ut som boots er mer populært å bruke enn støvler.
+                </p>
+                <p>Neste ting jeg sammenlignet var støvler mot joggesko, der var det flest på joggesko i gjennomsnittet, men støvler var mer populært i de siste månedene, så da tenker jeg støvler blir valgt.
+                    Samtidig er nok joggesko bra å ha med allikevel.
+                    Siden butikksiden jeg har laget skal være fokusert på bærekraft, valgte jeg også å sammenligne bærekraft og bærekraftig, der vant bærekraftig.
+                    Butikken skal også kunne ta imot og selge penere brukte sko, er det lurt å ha med ord som brukt og gjenbruk. Jeg kunne også tatt med resirkulering, men Google Trends viser at det blir brukt veldig likte i forhold til brukt og gjenbruk.
+                    I tillegg er ordet sko et veldig vanlig ord å bruke når man snakker om fottøy, så det er sikkert et bra nøkkelord også, hvis den ikke er for generell.
+                </p>
+                <h4>Valgte nøkkelord</h4>
+                <ul id="nokkelord">
+                    <li>
+                        vintersko
+                    </li>
+                    <li>
+                        boots
+                    </li>
+                    <li>
+                        bærekraftig
+                    </li>
+                    <li>
+                        brukt
+                    </li>
+                    <li>
+                        gjenbruk
+                    </li>
+                    <li>
+                        sko
+                    </li>
+                    <li>
+                        joggesko
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+            <h2 id="seolighthouse">SEO-analyse med Lighthouse</h2>
             <figure class="analysebildecontainer">
                 <picture>
                     <img class="analysebilde" src="img/SEO-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
@@ -75,19 +105,19 @@
             <h3>Accessibility-analyse med Lighthouse</h3>
             <figure class="analysebildecontainer">
                 <picture>
-                    <img class="analysebilde" src="img/Accessibility-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                    <img class="analysebilde" src="img/Accessibility-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 96%, resultater i tabellen.">
                 </picture>
                 <figcaption>Accessibility-analyse med lighthouse av hjemmeside.</figcaption>
             </figure>
             <figure class="analysebildecontainer">
                 <picture>
-                    <img class="analysebilde" src="img/Accessibility-lighthouse-produkt_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                    <img class="analysebilde" src="img/Accessibility-lighthouse-produkt_oblig-4.jpg" alt="Accessibility-analyse av Enviroshoe, 100%, resultater i tabellen.">
                 </picture>
                 <figcaption>Accessibility-analyse med lighthouse av produktside.</figcaption>
             </figure>
             <figure class="analysebildecontainer">
                 <picture>
-                    <img class="analysebilde" src="img/Accessibility-lighthouse-kundeservice_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                    <img class="analysebilde" src="img/Accessibility-lighthouse-kundeservice_oblig-4.jpg" alt="Accessibility-analyse av Enviroshoe sin kundeserviceside, 96%, resultater i tabellen.">
                 </picture>
                 <figcaption>Accessibility-analyse med lighthouse av kundeserviceside.</figcaption>
             </figure>
@@ -98,7 +128,7 @@
             <h3>Best practices-analyse med lighthouse</h3>
             <figure class="analysebildecontainer">
                 <picture>
-                    <img class="analysebilde" src="img/Best-practices-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 80%, resultater i tabellen over.">
+                    <img class="analysebilde" src="img/Best-practices-lighthouse_oblig-4.jpg" alt="SEO-analyse av Enviroshoe, 95%, resultater i tabellen.">
                 </picture>
                 <figcaption>Alle tre sidene viser like resultater i best practices-analyse.</figcaption>
             </figure>
@@ -107,13 +137,12 @@
                 Når browseren prøver å laste opp nettsiden, blir tre av filene besvart med en 404 not found.
                 Resultatet er at ikonene ikke vises på nettsiden når den er på serveren.
             </article>
-        </section>
 
-        <section>
-            <h2>Universal utformings-analyse med Webaim</h2>
+
+            <h2 id="webaim">Universal utformings-analyse med Webaim</h2>
             <figure class="analysebildecontainer">
                 <picture>
-                    <img class="analysebilde" src="img/WebAim-accessibility-summary.jpg" alt="bilde av overblikk til webaim accessibility tool.">
+                    <img class="analysebilde" src="img/WebAim-accessibility-summary.jpg" alt="bilde av overblikk til webaim accessibility tool - index.html.">
                 </picture>
             </figure>
             <article>
@@ -127,7 +156,7 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/WebAim-accessibility-summary-produkt.jpg" alt="bilde av overblikk til webaim accessibility tool.">
+                        <img class="analysebilde" src="img/WebAim-accessibility-summary-produkt.jpg" alt="bilde av overblikk til webaim accessibility tool - produkt.html">
                     </picture>
                 </figure>
                 <h3>Analyse av produktside</h3>
@@ -138,7 +167,7 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/WebAim-accessibility-summary-kundeservice.jpg" alt="bilde av overblikk til webaim accessibility tool.">
+                        <img class="analysebilde" src="img/WebAim-accessibility-summary-kundeservice.jpg" alt="bilde av overblikk til webaim accessibility tool - kundeservice.html">
                     </picture>
                 </figure>
                 <h3>Analyse av kundeserviceside</h3>
@@ -147,16 +176,16 @@
                     Her er det enklere å fikse på mangelen på h1-tagg, første overskriften er en h2, denne kan byttes til h1. Så er det den feilen på headeren der det er mangel på label-tagg.
                 </p>
             </article>
-        </section>
 
-        <section>
+
+        <section id="chatgpt">
             <h2>Analyse med chatgpt</h2>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/chatgpt-analyse-av-forside.jpg" alt="bilde av chatgpt-analyse av forside.">
+                </picture>
+            </figure>
             <article>
-                <figure class="analysebildecontainer">
-                    <picture>
-                        <img class="analysebilde" src="img/chatgpt-analyse-av-forside.jpg" alt="bilde av chatgpt-analyse av forside.">
-                    </picture>
-                </figure>
                 <h3>SEO-analyse</h3>
                 <p>
                     Chatgpt mener at title-taggen er bra nok, men jeg mener at den kanskje kunne vært mer beskrivende. 
@@ -171,24 +200,23 @@
                     Før bedre sikkerhet er det også lurt å legge til en https-protokoll, men det fikk den da sidene ble lagt inn på Filezilla.
                     Chatgpt anbefaler også å sette opp til Google analytics og search console for å holde øye på nettsidens hurtighet og identifisere SEO-problemer.
                     Hvis dette hadde vært en nettside som faktisk skulle tas i bruk, hadde nok dette vært en god ide. Men denne nettsiden er kun tilgjengelig på skolens server, så det er ikke sikkert det vil være noe data å følge med på.
-                </p>
-                <p>
                     Et par siste ting jeg må forsikre meg om er at nettsiden er lett navigerbar og er mobilvennlig.
                 </p>
+
                 <h3>UU-analyse</h3>
-                <figure class="analysebildecontainer">
-                    <picture>
-                        <img class="analysebilde" src="img/chatgpt-UU-analyse-av-forside.jpg" alt="bilde av chatgpt-analyse av forside.">
-                    </picture>
-                </figure>
                 <p>
                     Det ser ut til at det meste med UU er i orden også. Fortsatt en mangel på interne lenker, label-attributt til input-tagg og meningsfylt tekst.
                     Chatgpt anbefaler å teste nettsiden med skjermleser og andre tilgjengelighetsverktøy. I tillegg bør jeg forsikre meg at nettsiden kan navigeres med tastatur.
                 </p>
             </article>
+            <figure class="analysebildecontainer">
+                <picture>
+                    <img class="analysebilde" src="img/chatgpt-UU-analyse-av-forside.jpg" alt="bilde av chatgpt-analyse av forside, universell utforming.">
+                </picture>
+            </figure>
         </section>
 
-        <section>
+        <section id="table">
             <h2>Resultater fra analyse</h2>
             <table>
                 <tr>
@@ -334,8 +362,8 @@
             </table>
         </section>
 
-        <section>
-            <h2>Forbedrende tiltak</h2>
+
+            <h2 id="forbedring">Forbedrende tiltak</h2>
             <article>
                 <h3>Meta-description</h3>
                 <p>
@@ -344,7 +372,7 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-head-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-head-before.jpg" alt="bilde av head-taggen før endring.">
                     </picture>
                     <figcaption>Head før meta description</figcaption>
                 </figure>
@@ -354,19 +382,19 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-head-index-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-head-index-after.jpg" alt="bilde av head-taggen etter endring.">
                     </picture>
                     <figcaption>Index head etter meta description</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-head-kundeservice-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-head-kundeservice-after.jpg" alt="bilde av head-taggen til kundeservice etter endring.">
                     </picture>
                     <figcaption>Kundeservice head etter meta description</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-head-produkt-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-head-produkt-after.jpg" alt="bilde av head-taggen til produktside etter endring.">
                     </picture>
                     <figcaption>Produkt head etter meta description</figcaption>
                 </figure>
@@ -376,7 +404,7 @@
                 <h3>Erstatte ikke-fungerende a-tagger</h3>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-a-tagg-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-a-tagg-before.jpg" alt="bilde av kode med a-tagger før endring.">
                     </picture>
                     <figcaption>Kode før endring.</figcaption>
                 </figure>
@@ -387,7 +415,7 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-a-tagg-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-a-tagg-after.jpg" alt="bilde av kode med a-tagger etter endring.">
                     </picture>
                     <figcaption>Kode etter endring.</figcaption>
                 </figure>
@@ -397,7 +425,7 @@
                 <h3>Endre størrelse på tekst</h3>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-tekststr-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-tekststr-before.jpg" alt="bilde av tekststørrelse på figcaption før endring.">
                     </picture>
                     <figcaption>Figcaption før endring.</figcaption>
                 </figure>
@@ -410,7 +438,7 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-tekststr-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-tekststr-after.jpg" alt="bilde av tekststørrelse på figcaption etter endring.">
                     </picture>
                     <figcaption>Figcaption etter endring.</figcaption>
                 </figure>
@@ -420,7 +448,7 @@
                 <h3>Endre på h-taggene</h3>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-h-tagg-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-h-tagg-before.jpg" alt="bilde av h-tagger før endring.">
                     </picture>
                     <figcaption>Før endring, footeren hadde flere h5-tagger.</figcaption>
                 </figure>
@@ -432,7 +460,7 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-h-tagg-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-h-tagg-after.jpg" alt="bilde av h-tagger etter endring.">
                     </picture>
                     <figcaption>Etter endring, h5-taggene ble fjernet. I tillegg ble det lagt til en klasse for å ivareta CSS-egenskapene.</figcaption>
                 </figure>
@@ -442,13 +470,13 @@
                 <h3>Legge til label-attributt</h3>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-input-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-input-before.jpg" alt="bilde av søkefeltet før endring.">
                     </picture>
                     <figcaption>Søkefeltet før endring.</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-input-browser-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-input-browser-before.jpg" alt="bilde av søkefeltet før endring i browseren.">
                     </picture>
                     <figcaption>Søkefeltet før endring i browseren.</figcaption>
                 </figure>
@@ -460,13 +488,13 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-input-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-input-after.jpg" alt="bilde av søkefeltet etter endring.">
                     </picture>
                     <figcaption>Søkefeltet etter endring.</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-input-browser-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-input-browser-after.jpg" alt="bilde av søkefeltet etter endring i browseren.">
                     </picture>
                     <figcaption>Søkefeltet etter endring i browseren.</figcaption>
                 </figure>
@@ -476,13 +504,13 @@
                 <h3>Legge til meningsfylt innhold</h3>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-skrift-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-skrift-before.jpg" alt="bilde av skrift før endring.">
                     </picture>
                     <figcaption>Eksempler på tekst før endring.</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-skrift-web-before.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-skrift-web-before.jpg" alt="bilde av skrift før endring i browseren.">
                     </picture>
                     <figcaption>Eksempler på tekst i browseren før endring.</figcaption>
                 </figure>
@@ -494,40 +522,40 @@
                 </p>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-skrift-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-skrift-after.jpg" alt="bilde av skrift etter endring.">
                     </picture>
                     <figcaption>Eksempler på tekst etter endring.</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/oblig-4-skrift-web-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/oblig-4-skrift-web-after.jpg" alt="bilde avskrift etter endring i browseren.">
                     </picture>
                     <figcaption>Eksempler på tekst i browseren etter endring.</figcaption>
                 </figure>
 
                 <article>
                     <h3>Error i browser-logg</h3>
-                    <p>Feilen ble rettet ved å endre på link rel:Font til link rel:font i head. Da dukket symbolene endelig opp når jeg åpnet nettsiden via Filezilla.</p>
+                    <p>Feilen ble rettet ved å endre på link rel:Font til link rel:font i head. Da dukket symbolene endelig opp når jeg åpnet nettsiden via Filezilla. Da ser nettsiden lik ut uansett om den er åpnet lokalt eller på server.</p>
                 </article>
             </article>
 
             <article>
-                <h2>Analyse etter forbedringer</h2>
+                <h2 id="afteranalyse">Analyse etter forbedringer</h2>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/Lighthouse-after.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/Lighthouse-after.jpg" alt="bilde av lighthouse-analyse etter forbedringer.">
                     </picture>
                     <figcaption>Resultatet fra lighthouse etter endringer</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/webaim-after-index.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/webaim-after-index.jpg" alt="bilde av webaim-analyse etter forbedringer i index.">
                     </picture>
                     <figcaption>Resultatet fra webaim etter endringer på index.</figcaption>
                 </figure>
                 <figure class="analysebildecontainer">
                     <picture>
-                        <img class="analysebilde" src="img/webaim-after-kundeservice.jpg" alt="bilde av chatgpt-analyse av forside.">
+                        <img class="analysebilde" src="img/webaim-after-kundeservice.jpg" alt="bilde av webaim-analyse etter forbedringer i kundeservice.">
                     </picture>
                     <figcaption>Resultatet fra webaim etter endringer på kundeservicesiden, likt resultat på produktside.</figcaption>
                 </figure>
@@ -543,10 +571,9 @@
                     En annen ting er at den vil jeg skal fjerne understrek fra skriften som har det, men jeg tenker å la det være, siden de skal indikere at det er fungerende lenker.
                 </p>
             </article>
-        </section>
 
-        <section>
-            <h2>Tilgjengelighet</h2>
+
+            <h2 id="tilgjengelighet">Tilgjengelighet</h2>
             <article>
                 <h3>Skjermleser</h3>
                 <p>
@@ -575,14 +602,57 @@
                     Jeg la til ARIA på brødsmulestien og søkefeltet, mens symbolene fikk role="button".
                 </p>
             </article>
-        </section>
+
+            <article>
+                <h2>Microdata</h2>
+                <p>Neste del var å legge til microdata på produktsiden. Da brukte jeg schema.org og Googles test for rike resultater.
+                    Jeg la til en div rundt produktelementene for å brukes som en container. Taggene inni fikk diverse attributter basert på det jeg fant i schema.org og rike resultateranalysen.
+                    Det er noen advarsler igjen, men jeg valgte å la det være.
+                </p>
+            </article>
+
+            <article>
+                <h2>Metadata for Facebook</h2>
+                <p>Siste delen var å legge til metadata for sosiale medier. Jeg valgte kun å legge til metadata for Facebook, for det var vanskelig å finne til andre sosiale medier.
+                    Opengraph har en egen tester for metadata, men den kunne jeg ikke bruke siden nettsiden ikke ligger online. Så da så jeg kun på dokumentasjonen til Facebook.
+                    Men bare for å finne ut om det var riktig, spurte jeg chatgpt om den kunne vurdere det jeg hadde skrevet.
+                </p>
+            </article>
+    </div>
 
     </main>
+    <aside>
+        <h3>Snarveier</h3>
+        <ul class="snarveier">
+            <li>
+                <a href="#tittel">Resultater fra Google trends</a>
+            </li>
+            <li>
+                <a href="#seolighthouse">SEO-analyse med Lighthouse</a>
+            </li>
+            <li>
+                <a href="#webaim">Universal utforming med WebAIM</a>
+            </li>
+            <li>
+                <a href="#chatgpt">Analyse med ChatGPT</a>
+            </li>
+            <li>
+                <a href="#table">Resultater fra analyse</a>
+            </li>
+            <li>
+                <a href="#forbedring">Forberdende tiltak</a>
+            </li>
+            <li>
+                <a href="#afteranalyse">Analyse etter forbedringer</a>
+            </li>
+            <li>
+                <a href="#tilgjengelighet">Tilgjengelighet</a>
+            </li>
+        </ul>
+    </aside>
     <footer>
             <section id="footerkategorier" class="footer">
-                <a href=# class="footeroverskrift">
-                    Cecilie Sellevold Vegstein
-                </a>
+                    <p>Cecilie Sellevold Vegstein</p>
             </section>
 </footer>
 </body>

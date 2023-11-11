@@ -27,9 +27,15 @@ body{
         list-style: circle;
     }
     .analysebildecontainer{
-        display: flex;
+        display: grid;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap:1rem;
+        padding: 1rem;
+        figcaption{
+            display:flex;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
     }
 
     .analysebilde{
@@ -134,10 +140,8 @@ body{
                 order:1;
             }
         }
-
         }
-    
-        }
+    }
 
         /*hjemmeside*/
     main{
@@ -146,6 +150,15 @@ body{
         grid-row: 2 / 4;
         padding: 0 4% 4%;
         gap: 1%;   
+        justify-content: center;
+
+        .snarveier{
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            gap: 1rem;
+            text-decoration:underline;
+        }
             
         #Salgscontainer {
             display: flex;
@@ -365,7 +378,7 @@ body{
         }
     }
 
-    #lenkeholder{
+    #lenkeholder, .lenkeholder{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -373,12 +386,24 @@ body{
         grid-row: 2 / 3;
         align-items: center;
         background-color: hsl(203, 65%, 77%);
+        padding: 1rem;
+
+        article{
+        justify-content: center;
+         display: flex;
+        flex-wrap: wrap;
+        }
+
         nav{
         padding: 1rem;
         gap: 1rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        }
+        figure{
+            display:flex;
+            justify-content: center;
         }
         .servicelenke{
             display: flex;
@@ -405,12 +430,14 @@ body{
         grid-column: 1 / 4;
         padding: 1rem;
         background-color: hsl(203, 65%, 77%);
+        justify-content: center;
 
         #omoss{
             display:flex;
             grid-row-start: 4;
             grid-row-end: 5;
             flex-wrap:wrap;
+            flex-direction:column;
         }
         figure{
             display: flex;
@@ -523,8 +550,6 @@ body{
         }
     }
 
-    
-
 figure{
     margin:0;
     flex-direction:column;
@@ -539,23 +564,21 @@ figcaption{
     font-size:80%;
 }
 
-#analysecontainer{
+#chatgpt {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6.5rem;
+}
+
+#table{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-
-    article{
-        display:flex;
-        flex-wrap:wrap;
-        gap: 1.5rem;
-        max-width: 50rem;
+    tr{
+        background-color:  hsl(0, 0%, 98%);
     }
-    figure{
-        display:flex;
-        gap: 0;
-        figcaption{
-            font-size: 1rem;
-        }
+    h2{
+        padding: 30% 0 0;
     }
 }
 
